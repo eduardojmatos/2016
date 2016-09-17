@@ -10,6 +10,7 @@ self.addEventListener("activate", function(event) {
 
 	caches.open('abcdev-2016-v1').then(function(cache) {
 	  return cache.addAll([
+      '../',
       '../index.html',
       '../obrigado.html',
       '../codigo-de-conduta.html',

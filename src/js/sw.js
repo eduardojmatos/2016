@@ -11,7 +11,7 @@ self.addEventListener("activate", function(event) {
 	caches.open('abcdev-2016-v1').then(function(cache) {
 	  return cache.addAll([
       'https://eduardojmatos.github.io/abc-dev-2016/build/',
-      '../index.html',
+      './build/index.html',
       '../obrigado.html',
       '../codigo-de-conduta.html',
       '../css/reset.min.css',

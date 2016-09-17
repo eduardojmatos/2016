@@ -17,6 +17,15 @@
   <link rel="icon" sizes="192x192" href="images/favicon.png">
   <link rel="stylesheet" href="css/reset.min.css">
 	<link rel="stylesheet" href="css/style.min.css">
+  <script type="text/javascript" charset="utf-8">
+    if ("serviceWorker" in navigator) {
+      navigator.serviceWorker.register("js/sw.js").then(function(register) {
+        console.log("SW FTW!!!", register);
+      }).catch(function(err) {
+        console.log("OH NOOOOOO!!!");
+      });
+    }
+  </script>
 </head>
 <body>
   <header>
